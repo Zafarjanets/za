@@ -1,362 +1,362 @@
 {
  "fps": 30,
- "durationInFrames": 1117,
+ "durationInFrames": 992,
  "scenes": [
   {
    "id": "hook",
    "start": 0.0,
-   "end": 3.39,
+   "end": 3.14,
    "voiceStart": 0.5,
    "words": [
     {
      "text": "Что",
-     "start": 0.52,
-     "end": 0.679
+     "start": 0.5,
+     "end": 0.635
     },
     {
      "text": "такое",
-     "start": 0.679,
-     "end": 1.089
+     "start": 0.635,
+     "end": 0.984
     },
     {
      "text": "Python",
-     "start": 1.089,
-     "end": 1.406
+     "start": 0.984,
+     "end": 1.255
     },
     {
      "text": "и",
-     "start": 1.406,
-     "end": 1.532
+     "start": 1.255,
+     "end": 1.362
     },
     {
      "text": "почему",
-     "start": 1.532,
-     "end": 1.959
+     "start": 1.362,
+     "end": 1.725
     },
     {
      "text": "его",
-     "start": 1.959,
-     "end": 2.227
+     "start": 1.725,
+     "end": 1.953
     },
     {
      "text": "учат",
-     "start": 2.227,
-     "end": 2.511
+     "start": 1.953,
+     "end": 2.196
     },
     {
      "text": "миллионы?",
-     "start": 2.511,
-     "end": 3.08
+     "start": 2.196,
+     "end": 2.68
     }
    ]
   },
   {
    "id": "popular",
-   "start": 3.39,
-   "end": 7.38,
-   "voiceStart": 3.39,
+   "start": 3.14,
+   "end": 6.82,
+   "voiceStart": 3.14,
    "words": [
     {
      "text": "Python —",
-     "start": 3.41,
-     "end": 3.81
+     "start": 3.14,
+     "end": 3.435
     },
     {
      "text": "один",
-     "start": 3.97,
-     "end": 4.246
+     "start": 3.435,
+     "end": 3.699
     },
     {
      "text": "из",
-     "start": 4.246,
-     "end": 4.384
+     "start": 3.699,
+     "end": 3.831
     },
     {
      "text": "самых",
-     "start": 4.384,
-     "end": 4.676
+     "start": 3.831,
+     "end": 4.11
     },
     {
      "text": "популярных",
-     "start": 4.676,
-     "end": 5.26
+     "start": 4.11,
+     "end": 4.668
     },
     {
      "text": "языков",
-     "start": 5.26,
-     "end": 5.674
+     "start": 4.668,
+     "end": 5.065
     },
     {
      "text": "программирования",
-     "start": 5.674,
-     "end": 6.672
+     "start": 5.065,
+     "end": 6.019
     },
     {
      "text": "в",
-     "start": 6.672,
-     "end": 6.794
+     "start": 6.019,
+     "end": 6.136
     },
     {
      "text": "мире.",
-     "start": 6.794,
-     "end": 7.07
+     "start": 6.136,
+     "end": 6.4
     }
    ]
   },
   {
    "id": "history",
-   "start": 7.38,
-   "end": 12.85,
-   "voiceStart": 7.38,
+   "start": 6.82,
+   "end": 11.9,
+   "voiceStart": 6.82,
    "words": [
     {
      "text": "Его",
-     "start": 7.4,
-     "end": 7.7
+     "start": 6.86,
+     "end": 7.128
     },
     {
      "text": "создал",
-     "start": 7.7,
-     "end": 8.055
+     "start": 7.128,
+     "end": 7.444
     },
     {
      "text": "голландский",
-     "start": 8.055,
-     "end": 8.624
+     "start": 7.444,
+     "end": 7.951
     },
     {
      "text": "программист",
-     "start": 8.624,
-     "end": 9.193
+     "start": 7.951,
+     "end": 8.458
     },
     {
      "text": "Гвидо",
-     "start": 9.193,
-     "end": 9.529
+     "start": 8.458,
+     "end": 8.758
     },
     {
      "text": "ван",
-     "start": 9.529,
-     "end": 9.707
+     "start": 8.758,
+     "end": 8.916
     },
     {
      "text": "Россум",
-     "start": 9.707,
-     "end": 10.062
+     "start": 8.916,
+     "end": 9.232
     },
     {
      "text": "в",
-     "start": 10.062,
-     "end": 10.203
+     "start": 9.232,
+     "end": 9.358
     },
     {
      "text": "1991",
-     "start": 10.203,
-     "end": 12.222
+     "start": 9.358,
+     "end": 11.157
     },
     {
      "text": "году.",
-     "start": 12.222,
-     "end": 12.54
+     "start": 11.157,
+     "end": 11.44
     }
    ]
   },
   {
    "id": "name",
-   "start": 12.85,
-   "end": 17.34,
-   "voiceStart": 12.85,
+   "start": 11.9,
+   "end": 15.92,
+   "voiceStart": 11.9,
    "words": [
     {
      "text": "И",
-     "start": 12.87,
-     "end": 13.005
+     "start": 11.94,
+     "end": 12.066
     },
     {
      "text": "назвали",
-     "start": 13.005,
-     "end": 13.482
+     "start": 12.066,
+     "end": 12.508
     },
     {
      "text": "его",
-     "start": 13.482,
-     "end": 13.77
+     "start": 12.508,
+     "end": 12.775
     },
     {
      "text": "не",
-     "start": 13.77,
-     "end": 13.923
+     "start": 12.775,
+     "end": 12.917
     },
     {
      "text": "в",
-     "start": 13.923,
-     "end": 14.058
+     "start": 12.917,
+     "end": 13.043
     },
     {
      "text": "честь",
-     "start": 14.058,
-     "end": 14.264
+     "start": 13.043,
+     "end": 13.234
     },
     {
      "text": "змеи,",
-     "start": 14.264,
-     "end": 14.57
+     "start": 13.234,
+     "end": 13.518
     },
     {
      "text": "а",
-     "start": 14.83,
-     "end": 14.972
+     "start": 13.518,
+     "end": 13.643
     },
     {
      "text": "в",
-     "start": 14.972,
-     "end": 15.114
+     "start": 13.643,
+     "end": 13.769
     },
     {
      "text": "честь",
-     "start": 15.114,
-     "end": 15.331
+     "start": 13.769,
+     "end": 13.96
     },
     {
      "text": "британского",
-     "start": 15.331,
-     "end": 16.029
+     "start": 13.96,
+     "end": 14.576
     },
     {
      "text": "шоу",
-     "start": 16.029,
-     "end": 16.332
+     "start": 14.576,
+     "end": 14.844
     },
     {
      "text": "«Монти",
-     "start": 16.332,
-     "end": 16.672
+     "start": 14.844,
+     "end": 15.144
     },
     {
      "text": "Пайтон».",
-     "start": 16.672,
-     "end": 17.03
+     "start": 15.144,
+     "end": 15.46
     }
    ]
   },
   {
    "id": "simple",
-   "start": 17.34,
-   "end": 22.05,
-   "voiceStart": 17.34,
+   "start": 15.92,
+   "end": 19.9,
+   "voiceStart": 15.92,
    "words": [
     {
      "text": "Главная",
-     "start": 17.36,
-     "end": 17.949
+     "start": 15.92,
+     "end": 16.394
     },
     {
      "text": "фишка —",
-     "start": 17.949,
-     "end": 18.35
+     "start": 16.394,
+     "end": 16.716
     },
     {
      "text": "простой",
-     "start": 18.35,
-     "end": 18.793
+     "start": 16.716,
+     "end": 17.072
     },
     {
      "text": "код.",
-     "start": 18.793,
-     "end": 19.004
+     "start": 17.072,
+     "end": 17.242
     },
     {
      "text": "Одна",
-     "start": 19.004,
-     "end": 19.383
+     "start": 17.242,
+     "end": 17.546
     },
     {
      "text": "строчка,",
-     "start": 19.383,
-     "end": 19.826
+     "start": 17.546,
+     "end": 17.903
     },
     {
      "text": "и",
-     "start": 19.826,
-     "end": 19.994
+     "start": 17.903,
+     "end": 18.037
     },
     {
      "text": "программа",
-     "start": 19.994,
-     "end": 20.627
+     "start": 18.037,
+     "end": 18.546
     },
     {
      "text": "уже",
-     "start": 20.627,
-     "end": 20.983
+     "start": 18.546,
+     "end": 18.832
     },
     {
      "text": "работает.",
-     "start": 20.983,
-     "end": 21.74
+     "start": 18.832,
+     "end": 19.44
     }
    ]
   },
   {
    "id": "uses",
-   "start": 22.05,
-   "end": 27.62,
-   "voiceStart": 22.05,
+   "start": 19.9,
+   "end": 24.7,
+   "voiceStart": 19.9,
    "words": [
     {
      "text": "На",
-     "start": 22.07,
-     "end": 22.233
+     "start": 19.92,
+     "end": 20.063
     },
     {
      "text": "нём",
-     "start": 22.233,
-     "end": 22.415
+     "start": 20.063,
+     "end": 20.222
     },
     {
      "text": "делают",
-     "start": 22.415,
-     "end": 22.905
+     "start": 20.222,
+     "end": 20.65
     },
     {
      "text": "сайты,",
-     "start": 22.905,
-     "end": 23.25
+     "start": 20.65,
+     "end": 20.952
     },
     {
      "text": "ботов,",
-     "start": 23.51,
-     "end": 23.89
+     "start": 20.952,
+     "end": 21.254
     },
     {
      "text": "анализ",
-     "start": 24.07,
-     "end": 24.517
+     "start": 21.254,
+     "end": 21.682
     },
     {
      "text": "данных,",
-     "start": 24.517,
-     "end": 24.85
+     "start": 21.682,
+     "end": 22.001
     },
     {
      "text": "автоматизацию",
-     "start": 25.07,
-     "end": 26.053
+     "start": 22.001,
+     "end": 22.983
     },
     {
      "text": "и",
-     "start": 26.053,
-     "end": 26.179
+     "start": 22.983,
+     "end": 23.11
     },
     {
      "text": "искусственный",
-     "start": 26.179,
-     "end": 26.832
+     "start": 23.11,
+     "end": 23.763
     },
     {
      "text": "интеллект.",
-     "start": 26.832,
-     "end": 27.31
+     "start": 23.763,
+     "end": 24.24
     }
    ],
    "items": [
@@ -364,89 +364,89 @@
      "word": "сайты,",
      "label": "Сайты",
      "icon": "</>",
-     "at": 22.905
+     "at": 20.65
     },
     {
      "word": "ботов,",
      "label": "Боты",
      "icon": "@bot",
-     "at": 23.51
+     "at": 20.952
     },
     {
      "word": "данных,",
      "label": "Анализ данных",
      "icon": "chart",
-     "at": 24.517
+     "at": 21.682
     },
     {
      "word": "автоматизацию",
      "label": "Автоматизация",
      "icon": "⚙",
-     "at": 25.07
+     "at": 22.001
     },
     {
      "word": "интеллект.",
      "label": "Искусственный интеллект",
      "icon": "AI",
-     "at": 26.832
+     "at": 23.763
     }
    ]
   },
   {
    "id": "who",
-   "start": 27.62,
-   "end": 32.77,
-   "voiceStart": 27.62,
+   "start": 24.7,
+   "end": 28.72,
+   "voiceStart": 24.7,
    "words": [
     {
      "text": "Его",
-     "start": 27.64,
-     "end": 28.03
+     "start": 24.74,
+     "end": 25.025
     },
     {
      "text": "используют",
-     "start": 28.03,
-     "end": 28.907
+     "start": 25.025,
+     "end": 25.665
     },
     {
      "text": "Google,",
-     "start": 28.907,
-     "end": 29.162
+     "start": 25.665,
+     "end": 25.852
     },
     {
      "text": "YouTube,",
-     "start": 29.162,
-     "end": 29.576
+     "start": 25.852,
+     "end": 26.154
     },
     {
      "text": "Instagram,",
-     "start": 29.576,
-     "end": 30.269
+     "start": 26.154,
+     "end": 26.66
     },
     {
      "text": "Netflix,",
-     "start": 30.269,
-     "end": 30.779
+     "start": 26.66,
+     "end": 27.033
     },
     {
      "text": "Spotify",
-     "start": 30.779,
-     "end": 31.448
+     "start": 27.033,
+     "end": 27.521
     },
     {
      "text": "и",
-     "start": 31.448,
-     "end": 31.631
+     "start": 27.521,
+     "end": 27.655
     },
     {
      "text": "даже",
-     "start": 31.631,
-     "end": 32.046
+     "start": 27.655,
+     "end": 27.958
     },
     {
      "text": "NASA.",
-     "start": 32.046,
-     "end": 32.46
+     "start": 27.958,
+     "end": 28.26
     }
    ],
    "items": [
@@ -454,75 +454,75 @@
      "word": "Google,",
      "label": "Google",
      "color": "#4285F4",
-     "at": 28.907
+     "at": 25.665
     },
     {
      "word": "YouTube,",
      "label": "YouTube",
      "color": "#FF3B30",
-     "at": 29.162
+     "at": 25.852
     },
     {
      "word": "Instagram,",
      "label": "Instagram",
      "color": "#E1306C",
-     "at": 29.576
+     "at": 26.154
     },
     {
      "word": "Netflix,",
      "label": "Netflix",
      "color": "#E50914",
-     "at": 30.269
+     "at": 26.66
     },
     {
      "word": "Spotify",
      "label": "Spotify",
      "color": "#1DB954",
-     "at": 30.779
+     "at": 27.033
     },
     {
      "word": "NASA.",
      "label": "NASA",
      "color": "#3D7BFF",
-     "at": 32.046
+     "at": 27.958
     }
    ]
   },
   {
    "id": "cta",
-   "start": 32.77,
-   "end": 37.21,
-   "voiceStart": 32.77,
+   "start": 28.72,
+   "end": 33.06,
+   "voiceStart": 28.72,
    "words": [
     {
      "text": "Хочешь",
-     "start": 32.79,
-     "end": 33.092
+     "start": 28.72,
+     "end": 28.992
     },
     {
      "text": "в",
-     "start": 33.092,
-     "end": 33.212
+     "start": 28.992,
+     "end": 29.1
     },
     {
      "text": "программирование?",
-     "start": 33.212,
-     "end": 34.19
+     "start": 29.1,
+     "end": 29.98
     },
     {
      "text": "Начни",
-     "start": 34.31,
-     "end": 34.656
+     "start": 30.16,
+     "end": 30.451
     },
     {
      "text": "с",
-     "start": 34.656,
-     "end": 34.801
+     "start": 30.451,
+     "end": 30.572
     },
     {
      "text": "Python!",
-     "start": 34.801,
-     "end": 35.31
+     "start": 30.572,
+     "end": 31.0
     }
    ]
   }

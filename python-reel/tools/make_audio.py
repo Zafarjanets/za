@@ -21,11 +21,41 @@ TAIL = 1.6
 VOWELS = set("аеёиоуыэюяaeiouy")
 
 
-def tts(text, voice, rate, out):
+_piper = {}
+
+
+def piper(voice):
+    if voice not in _piper:
+        import sherpa_onnx
+        d = ROOT / "models" / f"vits-piper-ru_RU-{voice}"
+        vits = sherpa_onnx.OfflineTtsVitsModelConfig(
+            model=str(d / f"ru_RU-{voice}.onnx"), tokens=str(d / "tokens.txt"),
+            data_dir=str(d / "espeak-ng-data"))
+        cfg = sherpa_onnx.OfflineTtsConfig(
+            model=sherpa_onnx.OfflineTtsModelConfig(vits=vits, num_threads=4))
+        _piper[voice] = sherpa_onnx.OfflineTts(cfg)
+    return _piper[voice]
+
+
+# Warmer, more "recorded" voice: trim rumble, add presence, gentle compression.
+VOICE_FX = ("highpass=f=70,equalizer=f=180:t=q:w=1:g=2,equalizer=f=3500:t=q:w=1.2:g=2.5,"
+            "acompressor=threshold=-20dB:ratio=3:attack=5:release=80:makeup=2")
+
+
+def tts(text, script, out):
     raw = out.with_suffix(".raw.wav")
-    subprocess.run(["RHVoice-test", "-p", voice, "-r", str(rate), "-o", str(raw)],
-                   input=text.encode(), check=True, capture_output=True)
-    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(raw),
+    if script["engine"] == "piper":
+        a = piper(script["voice"]).generate(text, sid=0, speed=script["speed"])
+        pcm = (np.clip(np.array(a.samples), -1, 1) * 32767).astype(np.int16)
+        with wave.open(str(raw), "wb") as f:
+            f.setnchannels(1)
+            f.setsampwidth(2)
+            f.setframerate(a.sample_rate)
+            f.writeframes(pcm.tobytes())
+    else:
+        subprocess.run(["RHVoice-test", "-p", script["voice"], "-r", str(script["rate"]),
+                        "-o", str(raw)], input=text.encode(), check=True, capture_output=True)
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(raw), "-af", VOICE_FX,
                     "-ac", "1", "-ar", str(SR), str(out)], check=True)
     with wave.open(str(out)) as w:
         data = np.frombuffer(w.readframes(w.getnframes()), dtype=np.int16)
@@ -42,7 +72,7 @@ def envelope(x, win=0.02):
 def trim(x, thr=0.02):
     env, n = envelope(x)
     on = np.where(env > thr)[0]
-    a = max(on[0] * n - int(0.03 * SR), 0)
+    a = max(on[0] * n - int(0.08 * SR), 0)
     b = min((on[-1] + 1) * n + int(0.06 * SR), len(x))
     return x[a:b]
 
@@ -208,7 +238,7 @@ def main():
     for i, sc in enumerate(script["scenes"]):
         shown = tokens(sc["text"])
         spoken = [" ".join(sc["say"].get(p, p) for p in w.split()) for w in shown]
-        x = trim(tts(" ".join(spoken), script["voice"], script["rate"], tmp / f"{i}.wav"))
+        x = trim(tts(" ".join(spoken), script, tmp / f"{i}.wav"))
         times = word_timings(shown, spoken, x)
         dur = len(x) / SR
         gap = script["gapAfter"] + (TAIL if i == len(script["scenes"]) - 1 else 0)
@@ -258,6 +288,13 @@ def main():
         for it in sc.get("items", []):
             put(pop(), it["at"], 0.25)
     put(ding(), scenes[-1]["words"][-1]["start"], 0.3)
+
+    with wave.open(str(tmp / "voice.wav"), "wb") as f:
+        f.setnchannels(1)
+        f.setsampwidth(2)
+        f.setframerate(SR)
+        f.writeframes((voice * 32767).astype(np.int16).tobytes())
+    print("voice-only track:", tmp / "voice.wav")
 
     mix = voice + music + sfx
     mix /= max(np.abs(mix).max() / 0.95, 1)
