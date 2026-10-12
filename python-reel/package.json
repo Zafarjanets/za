@@ -1,0 +1,24 @@
+{
+  "name": "python-reel",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "audio": "python3 tools/make_audio.py",
+    "preview": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts PythonReel out/python-reel.mp4 --codec=h264 --crf=20"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@remotion/cli": "^4.0.535",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.535"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "typescript": "^7.0.2"
+  },
+  "private": true
+}
